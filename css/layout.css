@@ -1,0 +1,226 @@
+* {
+  font-family: "Noto Sans KR", sans-serif;
+}
+:root {
+  --color-black: black;
+  --color-purple: #8e7be3;
+  --color-blue: #1f90fc;
+  --color-white: #f9fafb;
+  --color-purblue: #6c74eb;
+}
+body {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.inner {
+  width: 1200px;
+  margin: auto;
+  height: 100vh;
+}
+/* ############### header ############### */
+.header .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fff;
+  position: relative;
+}
+.header h1 {
+  font-size: 48px;
+  line-height: 130%;
+  font-weight: 700;
+  color: #6b74eb;
+  margin-bottom: 10px;
+}
+.header h2 {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  opacity: 0.65;
+}
+.header h3 {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  margin-bottom: 150px;
+  opacity: 0.65;
+}
+.header p:nth-child(1) {
+  font-size: 18px;
+  position: absolute;
+  top: 60px;
+  text-transform: uppercase;
+  opacity: 0.65;
+  letter-spacing: 0.05px;
+}
+.header .link {
+  display: inline-block;
+  font-size: 14px;
+  all: unset;
+  padding: 15px 15px;
+  text-align: center;
+  width: 150px;
+  background: linear-gradient(#8991fc, #6b74eb);
+  border-radius: 12px;
+  color: #fff;
+  box-shadow: 0px 4px 16px (rgba(97, 24, 255, 0.3));
+  border-bottom: 4px solid #353b8f;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+.header p:last-child {
+  position: absolute;
+  bottom: 80px;
+  letter-spacing: 0.5px;
+}
+/* ############### section: summary ############### */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.summary .content {
+  height: 75vh;
+}
+.sub-tit {
+  text-align: center;
+  font-size: 35px;
+  color: #1f90fc;
+  padding-top: 2em;
+  font-weight: 700;
+}
+.text {
+  margin-top: 45px;
+  font-size: 18px;
+  line-height: 35px;
+  opacity: 0.85;
+}
+
+/* ############### section: intro ############### */
+.tit-sub {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 15px;
+  opacity: 0.85;
+  text-align: center;
+}
+.circle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.circle-item {
+  width: 200px;
+  height: 200px;
+  background-color: var(--color-purple);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.circle-item-text {
+  font-size: 18px;
+  color: white;
+  line-height: 160%;
+  text-align: center;
+  font-weight: 500;
+}
+/* ############### section: research ############### */
+.research .img-cover {
+  width: 600px;
+  height: auto;
+  margin: auto;
+  margin-top: 45px;
+}
+.research .img-cover img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+/* ############### section: theory ############### */
+.theory .img-cover {
+  width: 500px;
+  height: auto;
+  margin: auto;
+  margin-top: 45px;
+}
+.theory .text {
+  text-align: center;
+}
+/* ############### section: term ############### */
+.term .circle-wrapper span {
+  font-size: 50px;
+  color: var(--color-purblue);
+}
+/* ############### section: graph ############### */
+.graph .img-cover {
+  width: 700px;
+  height: auto;
+  margin: auto;
+  margin-top: 150px;
+}
+.graph .img-cover img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+/* ############### section: box ############### */
+.box-first {
+  margin-top: 120px;
+  margin-bottom: 28px;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.box-item {
+  height: 200px;
+  width: 164px;
+  background-color: var(--color-white);
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 8px;
+  border-radius: 0.5em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.box-con {
+  height: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.box-text {
+  line-height: 20px;
+  width: 100%;
+  font-size: 14px;
+  opacity: 0.85;
+  text-align: center;
+}
+
+.box-item i {
+  width: 100%;
+  height: 20%;
+  font-size: xxx-large;
+  margin-bottom: 20px;
+  color: var(--color-purple);
+}
+.box-second i {
+  color: var(--color-purblue);
+}
