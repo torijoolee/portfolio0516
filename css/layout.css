@@ -35,6 +35,7 @@ img {
   font-weight: 700;
   color: #6b74eb;
   margin-bottom: 10px;
+  margin-top: 50px;
 }
 .header h2 {
   font-weight: 500;
@@ -48,7 +49,7 @@ img {
   font-size: 16px;
   letter-spacing: 0.5px;
   line-height: 22px;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
   opacity: 0.65;
 }
 .header p:nth-child(1) {
@@ -192,8 +193,7 @@ img {
   background-color: var(--color-white);
   display: flex;
   flex-wrap: wrap;
-
-  margin: 0 8px;
+  margin: 0 5px;
   border-radius: 0.5em;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
 }
@@ -206,6 +206,19 @@ img {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+.box-con .icon {
+  font-size: 60px;
+}
+
+.box-first .box-item .box-con .icon,
+.box-first span.rig {
+  color: var(--color-purple);
+}
+.box-second .box-item .box-con .icon,
+.box-second span.rig {
+  color: var(--color-purblue);
+}
+
 .box-text {
   line-height: 20px;
   width: 100%;
@@ -223,4 +236,113 @@ img {
 }
 .box-second i {
   color: var(--color-purblue);
+}
+/* ############### section: compare ############### */
+.table-items {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.item {
+  width: 360px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--color-white);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.24);
+  position: relative;
+}
+
+.item-list {
+  font-size: 15px;
+  line-height: 160%;
+  margin-top: 1.2em;
+  display: flex;
+  opacity: 0.85;
+}
+.compare .img-cover {
+  width: 80px;
+  height: auto;
+}
+.compare .img-cover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 1px dotted rgba(0, 0, 0, 0.24);
+}
+.logo {
+  margin-bottom: 4px;
+  object-fit: cover;
+  width: inherit;
+  height: inherit;
+  padding-bottom: 20px;
+  margin: auto;
+}
+.logo-name {
+  opacity: 0.65;
+  padding-bottom: 8px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+/* /* ############### section: result ############### */
+/* /* ############### section: result-graph ############### */
+.item-list::before {
+  content: "◾️";
+  margin-right: 0.5em;
+  font-size: 0.8rem;
+  opacity: 0.65;
+}
+.result-graph .img-cover {
+  width: 500px;
+  height: auto;
+  margin: auto;
+  margin-top: 100px;
+}
+/* /* ############### section: conclusion ############### */
+
+.conclu-text-wrap:nth-child(1) {
+  margin-top: 100px;
+}
+.conclu-text-wrap {
+  margin-bottom: 55px;
+}
+
+.conclu-text-wrap {
+  display: flex;
+}
+.conclu-text-wrap::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-purple);
+  margin-right: 10px;
+  flex-shrink: 0;
+  text-align: center;
+  line-height: 32px;
+  color: #fff;
+}
+.conclu-text-wrap:nth-child(1):before {
+  content: "1";
+}
+.conclu-text-wrap:nth-child(2):before {
+  content: "2";
+}
+.conclu-text-wrap:nth-child(3):before {
+  content: "3";
+}
+.conclusion .text {
+  margin-top: 20px;
+}
+.conclu-text-wrap h4 {
+  font-weight: 700;
+  font-size: 18px;
+  opacity: 0.85;
 }
