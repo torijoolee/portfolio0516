@@ -1,10 +1,18 @@
 /* scale */
 .ani.scale {
   transform: scale(0.8) translateY(20px);
-  transition: 1s ease in;
+  transition: 1s ease-out;
 }
 .ani.scale.moving {
   transform: scale(1) translateY(0px);
+}
+/* cover */
+.ani.cover::after {
+  width: 100%;
+  transition: 2s ease-out;
+}
+.ani.cover.moving::after {
+  width: 0;
 }
 /* delay */
 .ani.delay02 {

@@ -4,6 +4,8 @@
       if (elem.isIntersecting) {
         console.log(elem.target);
         elem.target.classList.add("moving");
+      } else {
+        elem.target.classList.remove("moving");
       }
     });
   });
