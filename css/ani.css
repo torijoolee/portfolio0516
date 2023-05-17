@@ -6,14 +6,48 @@
 .ani.scale.moving {
   transform: scale(1) translateY(0px);
 }
-/* cover */
+/* cover*/
 .ani.cover::after {
   width: 100%;
-  transition: 2s ease-out;
+  transition: 1.5s ease-out;
 }
 .ani.cover.moving::after {
   width: 0;
 }
+
+/* to top */
+.ani.top {
+  opacity: 0;
+  transform: translateY(0px);
+  transition: 1s ease-out;
+}
+.ani.top.moving {
+  opacity: 1;
+  transform: translateY(-40px);
+}
+
+/* to right */
+.ani.right {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: 1s ease-out;
+}
+.ani.right.moving {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* to left */
+.ani.left {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: 1s ease-out;
+}
+.ani.left.moving {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 /* delay */
 .ani.delay02 {
   transition-delay: 0.5s;

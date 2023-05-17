@@ -75,14 +75,17 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.8px;
   cursor: pointer;
+  position: relative;
 }
-.header .content .link::hover {
-  background: linear-gradient(color--var-);
+.header .link:hover {
+  border-top: 4px solid #8991fc;
+  border-bottom: none;
 }
 .header p:last-child {
   position: absolute;
   bottom: 80px;
   letter-spacing: 0.5px;
+  opacity: 0.85;
 }
 /* ############### section: summary ############### */
 .content {
@@ -193,6 +196,7 @@ img {
   margin: auto;
   margin-top: 150px;
 }
+
 .graph .img-cover img {
   width: inherit;
   height: inherit;
