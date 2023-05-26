@@ -299,7 +299,7 @@ img {
 }
 .item-list {
   font-size: 15px;
-  line-height: 160%;
+  line-height: 180%;
   margin-top: 1.2em;
   display: flex;
   opacity: 0.85;
@@ -386,4 +386,28 @@ img {
   font-weight: 700;
   font-size: 20px;
   opacity: 0.85;
+}
+/* scroll-top */
+.scroll-top {
+  all: unset;
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  background-color: var(--color-blue);
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: 1s;
+}
+.scroll-top.On {
+  visibility: visible;
+  opacity: 1;
+}
+.scroll-top span {
+  color: white;
 }
