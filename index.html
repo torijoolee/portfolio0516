@@ -4,12 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="이경주 퍼블리셔 포트폴리오" />
+    <meta
+      property="og:description"
+      content="html,css,js를 활용한 퍼블리셔 포트폴리오 사이트 앱카드 UI UX"
+    />
+    <meta property="og:image" content="" / >
     <title>App card UX thesis</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- header -->
     <header class="header">
+      <div class="progress-bar-wrap">
+        <div class="progress-bar"></div>
+      </div>
       <div class="header-inner inner">
         <div class="content ani top">
           <p>digital convergence</p>
@@ -34,7 +43,7 @@
     </header>
     <!-- summary -->
     <section class="section summary">
-      <div class="inner">
+      <div class="summary-inner inner">
         <h2 class="sub-tit">요약</h2>
         <div class="content">
           <p class="text ani top">
@@ -54,7 +63,7 @@
     </section>
     <!-- intro -->
     <section class="section intro">
-      <div class="inner">
+      <div class="intro-inner inner">
         <h2 class="sub-tit">서론</h2>
         <p class="tit-sub">모바일 간편 결제 서비스 시장 성장요인</p>
         <div class="content">
@@ -75,21 +84,21 @@
                 거래의 일반화
               </p>
             </li>
-            <li class="circle-item ani scale">
+            <li class="circle-item ani scale delay02">
               <p class="circle-item-text">스마트폰의 확산</p>
             </li>
-            <li class="circle-item ani scale">
+            <li class="circle-item ani scale delay03">
               <p class="circle-item-text">
                 Online to Offline<br />
                 서비스 성장
               </p>
             </li>
-            <li class="circle-item ani scale">
+            <li class="circle-item ani scale delay04">
               <p class="circle-item-text">
                 모바일 결제 플랫폼<br />안정성 개선
               </p>
             </li>
-            <li class="circle-item ani scale">
+            <li class="circle-item ani scale delay05">
               <p class="circle-item-text">
                 본인 인증절차의<br />간소화 및 다양화
               </p>
@@ -123,12 +132,12 @@
     </section>
     <!-- theory-->
     <section class="section theory">
-      <div class="inner">
+      <div class="theory-inner inner">
         <h2 class="sub-tit">이론적 배경</h2>
         <p class="tit-sub">모바일 간편 결제 서비스란?</p>
         <div class="content">
           <figure class="img-cover">
-            <img src="image/02.png" alt="" />
+            <img src="image/02.png" />
           </figure>
           <p class="text">
             대금을 지급할 수단(카드, 통장 등)정보를 모바일에 미리 저장해두고
@@ -154,12 +163,12 @@
               </span>
               <p class="circle-item-text">신용, 체크 직불카드</p>
             </div>
-            <span>+</span>
+            <span class="ani opa delay03">+</span>
             <div class="circle-item ani scale delay02">
               <span class="material-symbols-outlined icon"> phone_iphone </span>
               <p class="circle-item-text">모바일 기기</p>
             </div>
-            <span>=</span>
+            <span class="ani opa delay04">=</span>
             <div class="circle-item ani scale delay03">
               <span class="material-symbols-outlined icon">
                 enhanced_encryption
@@ -352,14 +361,13 @@
                 현황 파악
               </p>
             </li>
-
-            <li class="circle-item ani scale">
+            <li class="circle-item ani scale delay02">
               <p class="circle-item-text">
                 피터모빌의<br />허니콤 모델<br />
                 사용성 원칙 재구성
               </p>
             </li>
-            <li class="circle-item ani scale">
+            <li class="circle-item ani scale delay03">
               <p class="circle-item-text">질문지법 & 심층인터뷰</p>
             </li>
           </ul>
@@ -380,7 +388,7 @@
             앱카드 애플리케이션 사용성 평가를 통해 서비스에 대한 만족도를 비교,
             분석
           </p>
-          <figure class="img-cover">
+          <figure class="img-cover ani top">
             <img src="image/04.png" alt="" />
           </figure>
         </div>
@@ -444,5 +452,6 @@
     </section>
     <script src="js/main.js"></script>
     <script src="js/ani.js"></script>
+    <script src="js/header.js"></script>
   </body>
 </html>
