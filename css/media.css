@@ -1,0 +1,137 @@
+@media screen and (max-width: 1339px) {
+  .inner {
+    width: 83.3333vw;
+  }
+  /* intro */
+  .circle-item {
+    flex-shrink: 0;
+  }
+  .circle-wrapper {
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .inner {
+    height: auto;
+  }
+  .tit-sub {
+    line-height: 30px;
+  }
+  .circle-item {
+    width: 180px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .inner {
+    width: 95%;
+  }
+  /* box */
+  .box-wrapper {
+    width: 90%;
+    margin: auto;
+  }
+
+  .box-wrapper > span {
+    display: none;
+  }
+  .box-item {
+    margin-bottom: 10px;
+    width: 40%;
+  }
+  .box-first {
+    margin-top: 120px;
+    margin-bottom: 28px;
+  }
+  /* conclusion */
+  .conclu-text-wrap {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  section {
+    padding: 50px 0;
+  }
+  .inner {
+    width: 90%;
+    height: auto;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .mo {
+    display: block;
+  }
+  .sub-tit {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+  .graph .img-cover {
+    width: 100%;
+  }
+  /* intro */
+  .circle-wrapper {
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+  }
+  /* theory */
+  .theory .img-cover {
+    width: 70%;
+  }
+  /* content */
+  .research .img-cover {
+    width: 100%;
+  }
+  /* term */
+  .term .circle-wrapper > span {
+    transform: rotate(90deg);
+  }
+
+  /* compare */
+  .table-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* result-graph */
+  .result-graph .img-cover {
+    width: 90%;
+  }
+  /* conclusion */
+  .conclu-text-wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .conclu-text-wrap::before {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header h1 {
+    font-size: 35px;
+  }
+  /* box */
+  .box-wrapper {
+    width: 100%;
+  }
+  .box-item {
+    margin-bottom: 10px;
+    width: 45%;
+  }
+  /* compare */
+  .item {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 320px) {
+}
