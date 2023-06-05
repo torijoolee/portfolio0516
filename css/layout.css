@@ -354,7 +354,7 @@ img {
   margin-top: 160px;
 }
 .conclu-text-wrap:not(:last-of-type) {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 .conclu-text-wrap {
   display: flex;
